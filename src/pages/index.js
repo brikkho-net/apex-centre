@@ -10,7 +10,7 @@ import icon from './../../static/img/favicon.ico'
 class Home extends Component {
 
     render() {
-        console.log(this.props.data.singleNews)
+        console.log(this.props.data.allNews)
         return (
             <Aux>
                 <Helmet>
@@ -27,8 +27,8 @@ class Home extends Component {
                 <Layout>
                     <Header
                         news1={this.props.data.singleNews.frontmatter} 
-                        news2={this.props.data.allNews.edges[1].node.frontmatter} 
-                        news3={this.props.data.allNews.edges[2].node.frontmatter}
+                        news2={this.props.data.allNews.edges[0].node.frontmatter} 
+                        news3={this.props.data.allNews.edges[1].node.frontmatter}
                     />
                     
                     <NewsPreviewsContainer news={this.props.data.allNews.edges} />
