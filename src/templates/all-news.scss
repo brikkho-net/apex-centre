@@ -1,0 +1,123 @@
+
+
+
+@media(max-width: 750px) {
+    .img-container {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
+.all-news {
+
+    &__container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+    }
+
+    &-single {
+        &-container {
+            display: flex;
+            height: 30rem;
+            width: 75%;
+            margin-bottom: 5%;
+            color: #fff;
+
+            @media(max-width: 750px) {
+                height: 100%;
+                flex-flow: column;
+                align-items: center;
+                width: 80%;
+                margin: 6% 0;
+            }
+        }
+
+        &-info {
+            padding: 2rem 3rem;
+            width: 100%;
+        }
+
+        &-heading {
+            font-size: 3.5rem;
+            font-family: 'Marcellus', sans-serif;
+
+            @media(max-width: 850px) {
+                font-size: 3rem;
+            }
+
+
+            @media(max-width: 500px) {
+                font-size: 2.5rem;
+            }
+
+            &:hover {
+                color: #326f99;
+            }
+        }
+
+        &-date {
+            &-container {
+                display: flex;
+                align-items: center;
+                font-size: 1.3rem;
+                opacity: .6;
+                margin-top: .5rem;
+            }
+            margin-left: 1rem;
+            margin-top: .1rem;
+        }
+
+        &-desc {
+            font-size: 1.6rem;
+            margin-top: 4rem;
+        }
+    }
+
+
+    &-img {
+        width: 60%;
+        height: 100%;
+
+        @media(max-width: 850px) {
+        }
+
+        @media(max-width: 750px) {
+            height: 40rem;
+            width: 100%;
+        }
+
+        @media(max-width: 500px) {
+            height: 30rem;
+        }
+
+        @media(max-width: 350px) {
+            height: 20rem;
+        }
+
+    }
+
+    &__heading {
+        color: #326f99;
+        font-family: 'Marcellus', serif;
+        font-size: 4rem;
+        text-align: center;
+        margin: 3% 0 5% 0;
+
+        @media(max-width: 750px) {
+            margin-top: 8rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+
+
+    &__btn-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 2rem 10%;
+        margin-bottom: 5rem;
+    }
+}

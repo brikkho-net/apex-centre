@@ -1,0 +1,65 @@
+@font-face{
+    font-family: 'Dosis';
+    src: url('./../../../static/fonts/Dosis/Dosis-Regular.ttf');
+    font-display: swap;
+}
+
+@font-face{
+    font-family: 'Marcellus';
+    src: url('./../../../static/fonts/Marcellus/Marcellus-Regular.ttf');
+    font-display: swap;
+}
+
+@font-face{
+    font-family: 'IBM Plex Sans';
+    src: url('./../../../static/fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf');
+    font-display: swap;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 66.6%;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+    background: #212a30;
+    font-display: swap
+}
+
+
+a, a:visited, a:active, a:focus {
+    text-decoration: none;
+    border: none;
+    color: inherit;
+}
+
+@media(max-width: 1200px){
+    html {
+        font-size: 56.25%
+    }
+}
+
+@media(max-width: 900px){
+    html {
+        font-size: 50%;
+    }
+}
+
+@media(max-height: 400px){
+    html {
+        font-size: 43.75%;
+    }
+}
+
+@media(max-width: 600px){
+    html {
+        font-size: 43.75%;
+    }
+}

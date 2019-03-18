@@ -1,0 +1,16 @@
+.top-of-page {
+    &__container {
+        height: 12vh;
+        display: flex;
+        margin-left: 10%;
+        align-items: center;
+    }
+
+    &__img {
+        width: 22rem;
+
+        @media(max-width: 750px) {
+            width: 18rem;
+        }
+    }
+}

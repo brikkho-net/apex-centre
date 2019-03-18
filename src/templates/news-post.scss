@@ -1,0 +1,221 @@
+.news {
+    &__main {
+        display: flex;
+        margin-top: 3%;
+
+        @media(max-width: 1000px) {
+            flex-flow: column;
+            align-items: center;
+        }
+    }
+
+    &__container {
+        width: 45%;
+        margin-left: 20%;
+
+        @media(max-width: 1000px) {
+            width: 90%;
+            margin: 0;
+            margin-bottom: 20%;
+            margin-top: 10%;
+        }
+    }
+
+    &__content {
+        color: #fff;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        font-family: 'IBM Plex Sans'
+    }
+
+    &__info {
+        margin: 2rem;
+    }
+
+    &__heading {
+        font-size: 4rem;
+        font-family: 'Marcellus', serif;
+
+        @media(max-width: 1000px) {
+            font-size: 5rem;
+        }
+
+        @media(max-width: 550px) {
+            font-size: 4rem;
+        }
+    }
+
+    &__date {
+
+        &-container {
+            display: flex;
+            align-items: center;
+            font-size: 1.1rem;
+            opacity: .6;
+            margin: 1rem;
+            margin-top: .5rem;
+            margin-bottom: 5rem;
+
+            @media(max-width: 1000px) {
+                font-size: 1.4rem;
+            }
+        }
+
+        &-icon {
+            padding-right: .5rem;
+        }
+    }
+
+    &__text {
+        margin-top: 2rem;
+        font-size: 1.6rem;
+
+        @media(max-width: 1000px) {
+            font-size: 2rem;
+        }
+
+        @media(max-width: 500px) {
+            font-size: 1.6rem;
+        }
+
+        h2 {
+            margin-bottom: 2rem;
+            font-size: 3rem;
+            &:last-child {
+                margin-top: 13rem;
+                text-align: center;
+                margin-bottom: 0;
+                font-size: 4rem;
+            }
+        }
+
+        ul {
+            width: 80%;
+            margin-left: 7%;
+            
+            @media(max-width: 850px) {
+                font-size: 2.2rem;
+            }
+
+            li {
+                margin-bottom: 3rem;
+            }
+        }
+
+        p {
+            margin-bottom: 4rem;
+            font-size: 1.7rem;
+
+            @media(max-width: 850px) {
+                font-size: 2.2rem;
+            }
+        }
+
+    }
+
+    &__img {
+        height: 100%;
+
+        &-container {
+            height: 40rem;
+        }
+    }
+}
+
+.recommended {
+    &__container {
+        color: white;
+        margin-left: 5%;
+        flex: 1;
+
+        @media(max-width: 1000px) {
+            margin: 0;
+            flex: initial;
+            width: 100%;
+        }
+    }
+
+
+    &__heading {
+        border-left: 3px solid white;
+        padding-left: 10px;
+        font-size: 2.2rem;
+
+        @media(max-width: 1000px) {
+            display: none;
+        }
+    }
+
+    &__news {
+        width: 50%;
+        height: 100%;
+
+        @media(max-width: 1000px) {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            text-align: center;
+        }
+    }
+
+    &__single-news {
+        position: relative;
+        height: 16rem;
+        width: 100%;
+        margin: 10% 0;
+        cursor: pointer;
+
+
+        @media(max-width: 1300px) {
+            height: 13rem;
+        }
+
+        @media(max-width: 1000px) {
+            height: 30rem;
+            width: 70%;
+            display: none;
+        }
+
+        &::after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: linear-gradient(to bottom, transparent 0%, transparent 30%, black 100%)
+        }
+
+        &-img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &-heading {
+            font-size: 1.6rem;
+            font-weight: normal;
+
+
+            &-container {
+                position: absolute;
+                z-index: 2;
+                bottom: 12%;
+                left: 6%;
+                color: white;
+
+                @media(max-width: 1000px) {
+                    left: 5%;
+                }
+            }
+        }
+    }
+}
+
+.disqus-container {
+    margin: 20% 0;
+}
