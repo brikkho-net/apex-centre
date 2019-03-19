@@ -23,6 +23,7 @@ class Home extends Component {
                     <meta property="og:description" content="The best website dedicated to Apex Legends! Find the most recent and important information about the game" />
                     <link rel="shortcut icon" type="image/x-icon" href={icon}/>
                     <link rel="canonical" href="https://www.apex-centre.com/"/>
+                    <meta name="google-site-verification" content="C6i_-UHfQ2uacymyuY1rqxy6Pwo6NGlaX7XzE5Cu5xg" />
 
                 </Helmet>
                 <Layout>
