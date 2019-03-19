@@ -16,7 +16,7 @@ class Home extends Component {
                 <Helmet>
                     <html lang="en" />
                     <title>Apex Centre - Your #1 Source of Apex Legends Info</title>
-                    <meta name="description" content="The best website dedicated to Apex Legends! Find the most recent and important information about the game | News | Guides | Game Knowledge"/>
+                    <meta name="description" content="The best website dedicated to Apex Legends! Find the most recent and important information about the game | News | Guides | Game Knowledge | Stats"/>
                     <meta name="og:title" content="Apex Centre"/>
                     <meta name="keywords" content="apex, news, centre, legends, tracker, stats"/>
                     <meta property="og:image" content="https://pbs.twimg.com/media/DzP4GgXUUAAWi8Q.jpg:large"/>
