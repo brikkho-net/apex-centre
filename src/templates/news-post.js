@@ -11,6 +11,7 @@ const NewsPost = ({data}) => {
     const news = data.mainNews;
     console.log(news);
     const image = news.frontmatter.image.childImageSharp.fluid;
+
     const disqusShortname = "apex-centre";
     const disqusConfig = {
         url: `http://localhost:8000/${news.frontmatter.path}`,
@@ -25,7 +26,7 @@ const NewsPost = ({data}) => {
                 <meta name="description" content={news.frontmatter.description}/>
                 <meta name='keywords' content={news.frontmatter.tags} />
                 <meta name="og:title" content={news.frontmatter.title}/>
-                <meta property="og:image" content="https://pbs.twimg.com/media/DzP4GgXUUAAWi8Q.jpg:large"/>
+                <meta property="og:image" content={image.src}/>
             </Helmet>
             <Layout>
                 <main className='news__main'>
