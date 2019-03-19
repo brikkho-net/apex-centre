@@ -22,7 +22,7 @@ class Home extends Component {
                     <meta property="og:image" content="https://pbs.twimg.com/media/DzP4GgXUUAAWi8Q.jpg:large"/>
                     <meta property="og:description" content="The best website dedicated to Apex Legends! Find the most recent and important information about the game" />
                     <link rel="shortcut icon" type="image/x-icon" href={icon}/>
-                    <link rel="canonical" href="https://kind-brattain-33250d.netlify.com/"/>
+                    <link rel="canonical" href="https://www.apex-centre.com/"/>
                 </Helmet>
                 <Layout>
                     <Header

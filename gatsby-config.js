@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://kind-brattain-33250d.netlify.com/',
+    siteUrl: 'https://www.apex-centre.com/',
     title: 'Gatsby + Netlify CMS Starter',
     description:
       'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
@@ -16,15 +16,15 @@ module.exports = {
         https: true,
         www: true,
         SymLinksIfOwnerMatch: true,
-        host: 'https://kind-brattain-33250d.netlify.com/',
+        host: 'https://www.apex-centre.com/',
       }
     },
 
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://kind-brattain-33250d.netlify.com/',
-        sitemap: 'https://kind-brattain-33250d.netlify.com/sitemap.xml',
+        host: 'https://www.apex-centre.com/',
+        sitemap: 'https://www.apex-centre.com/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/', disallow: '/profile/' }]
       }
     },
