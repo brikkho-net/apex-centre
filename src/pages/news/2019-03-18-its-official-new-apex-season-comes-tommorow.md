@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: 'Its official: New Apex season comes tommorow!'
+title: 'Its official: New Apex season is coming!'
 date: Mar 18th 2019
 timePosted: 2019-03-18T19:36:16.783Z
 description: >-
