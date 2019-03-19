@@ -28,6 +28,14 @@ module.exports = {
         policy: [{ userAgent: '*', allow: '/', disallow: '/profile/' }]
       }
     },
+
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: 'UA-133346883-2',
+        head: true
+      }
+    },
   
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support

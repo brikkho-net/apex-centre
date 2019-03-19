@@ -24,16 +24,6 @@ class Home extends Component {
                     <link rel="shortcut icon" type="image/x-icon" href={icon}/>
                     <link rel="canonical" href="https://www.apex-centre.com/"/>
 
-                    {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
-                    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133346883-2"></script>
-                    <script>
-                        window.dataLayer = window.dataLayer || [];
-                        function gtag(){dataLayer.push(arguments)}
-                        gtag('js', new Date());
-
-                        gtag('config', 'UA-133346883-2');
-                    </script>
-
                 </Helmet>
                 <Layout>
                     <Header
