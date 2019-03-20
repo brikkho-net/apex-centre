@@ -27,6 +27,11 @@ const NewsPost = ({data}) => {
                 <meta name='keywords' content={news.frontmatter.tags} />
                 <meta name="og:title" content={news.frontmatter.title}/>
                 <meta property="og:image" content={image.src}/>
+                <meta name="twitter:card" content="summary" />
+                <meta name="twitter:site" content="@centre_apex" />
+                <meta name="twitter:title" content={news.frontmatter.title} />
+                <meta name="twitter:description" content={news.frontmatter.description} />
+                <meta name="twitter:image" content={image.src} />
             </Helmet>
             <Layout>
                 <main className='news__main'>
