@@ -10,11 +10,11 @@ tags: 'apex, legends, dragon, leak'
 ---
 After the battle pass update some people were disappointed with the lack of new content. However, Respawn has already informed us that they are going to evolve in terms of their updates quality. And, indeed, we can see some leaks that tell us something unexpected and big is going to happen - **Dragons are to be seen in Apex Legends.**
 
-![photo of dragons](/img/d2cgwnvucaaaw-w.jpg-large.jpeg)
+![Photo of Apex Dragons](/img/d2cgwnvucaaaw-w.jpg-large.jpeg)
 
 Of course, that single photo showed above isn't really much of a proof of our statement. It could as well have been some objects that are there just for visuals or something like that. However, people decided to dig in deeper and found some interesting facts about the matter, see for yourselves:
 
-![leak proof](/img/dragons-leak.png)
+![Proof of Apex Leak](/img/dragons-leak.png)
 
 In the game files, dataminers have found something that looks like a model of a flying object. We can clearly see a name "FLYER_SWARM_MODEL" which is an indication of that. These two photos combined together are a solid evidence that something big is going to happen soon.
 

@@ -14,7 +14,7 @@ Everyone has been spreading rumors about the new season of Apex Legends since a 
 
 
 
-![twitter image](/img/safdasff.png)
+![Apex twitter image](/img/safdasff.png)
 
 ## What will it bring us?
 

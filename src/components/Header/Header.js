@@ -114,7 +114,7 @@ class Header extends Component {
                         <Img 
                             style={{height: '100%', objectFit: 'fill'}} 
                             fluid={this.props.news1.image.childImageSharp.fluid} 
-                            alt='main news image'
+                            alt='Apex Legends Main News'
                         />
 
                     </div>
@@ -124,7 +124,7 @@ class Header extends Component {
                         <Img 
                             style={{height: '100%', objectFit: 'fill'}} 
                             fluid={this.props.news2.image.childImageSharp.fluid} 
-                            alt='main news image'
+                            alt='Apex Legends Main News'
                         />
                         
                     </div>
@@ -134,7 +134,7 @@ class Header extends Component {
                         <Img 
                             style={{height: '100%', objectFit: 'fill'}} 
                             fluid={this.props.news3.image.childImageSharp.fluid} 
-                            alt='main news image'
+                            alt='Apex Legends Main News'
                         />
                         
                     </div>

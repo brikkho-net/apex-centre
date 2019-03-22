@@ -36,11 +36,12 @@ const NewsPost = ({data}) => {
                 <link rel="canonical" href={canonicalLink}/>
             </Helmet>
             <Layout>
+
                 <main className='news__main'>
                     <article className='news__container'>
                         <div itemScope className='news__content'>
                                 <div className='news__img-container'>
-                                    <Img className='news__img' itemProp='image' fluid={image} alt="Image of The News"/>
+                                    <Img className='news__img' itemProp='image' fluid={image} alt="ApexLegends News Image"/>
                                 </div>
                                 <div className='news__info'>
                                     <h1 itemProp='name' className='news__heading'>{news.frontmatter.title}</h1>
