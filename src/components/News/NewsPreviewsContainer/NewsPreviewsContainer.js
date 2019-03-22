@@ -28,7 +28,7 @@ const NewsPreviewsContainer = (props) => {
                 {news}
             </div>
             <div className='news-previews__btn-container'>
-                <Link to='/all/news'><Button>More News</Button></Link>
+                <Link to='/all/news/'><Button>More News</Button></Link>
             </div>
 
     </main>

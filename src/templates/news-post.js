@@ -14,10 +14,11 @@ const NewsPost = ({data}) => {
 
     const disqusShortname = "apex-centre";
     const disqusConfig = {
-        url: `http://localhost:8000/${news.frontmatter.path}`,
+        url: `https://www.apex-centre.com/${news.frontmatter.path}`,
         identifier: news.id,
         title: news.frontmatter.title,
       };
+      const canonicalLink = `https://www.apex-centre.com/${news.frontmatter.path}`
 
     return (
         <Aux>
@@ -32,6 +33,7 @@ const NewsPost = ({data}) => {
                 <meta name="twitter:title" content={news.frontmatter.title} />
                 <meta name="twitter:description" content={news.frontmatter.description} />
                 <meta name="twitter:image" content={image.src} />
+                <link rel="canonical" href={canonicalLink}/>
             </Helmet>
             <Layout>
                 <main className='news__main'>

@@ -49,6 +49,7 @@ const allNews = ({ data, pageContext }) => {
             <Helmet>
                 <title>Apex Centre - All News</title>
                 <meta name="description" content="Check out every recent Apex Legends news we have provided! Most fresh and quality content on the internet!"/>
+                <link rel="canonical" href="https://www.apex-centre.com/all/news"/>
             </Helmet>
             <Layout>
                 <h1 className='all-news__heading'>ALL NEWS</h1>
