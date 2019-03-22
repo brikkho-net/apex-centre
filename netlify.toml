@@ -4,3 +4,8 @@
 [build.environment]
   YARN_VERSION = "1.9.4"
   YARN_FLAGS = "--no-ignore-optional"
+
+[[redirects]]
+https://pensive-colden-b47476.netlify.com/* https://www.apex-centre.com/:splat
+from = 'https://pensive-colden-b47476.netlify.com/*'
+to = 'https://www.apex-centre.com/:splat'
