@@ -6,7 +6,9 @@ const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 
 
 exports.createPages = ({ graphql, actions }) => {
-    const { createPage } = actions
+    const { createPage, createRedirect } = actions
+  
+    createRedirect({ fromPath: 'https://pensive-colden-b47476.netlify.com/*', toPath: 'https://www.apex-centre.com/:splat', isPermanent: true, force: true });
   
     return new Promise((resolve, reject) => {
       const blogPostTemplate = path.resolve(`src/templates/news-post.js`);
