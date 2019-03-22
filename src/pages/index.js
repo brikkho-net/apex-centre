@@ -10,7 +10,6 @@ import icon from './../../static/img/favicon.ico'
 class Home extends Component {
 
     render() {
-        console.log(this.props.data.allNews)
         return (
             <Aux>
                 <Helmet>
@@ -73,7 +72,7 @@ class Home extends Component {
         singleNews: markdownRemark(
             frontmatter: {
               path: {
-                eq: "news/check-your-stats"
+                eq: "news/check-your-stats/"
               }
             }
         
