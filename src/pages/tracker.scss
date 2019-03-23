@@ -10,9 +10,22 @@
     align-items: center;
     font-family: 'Dosis';
 
+    // Some old browsers require it...
     @media(max-width: 500px) {
         height: 72vh;
-        width: 100%;
+        width: 500px;
+    }
+    @media(max-width: 450px) {
+        width: 450px;
+    }
+    @media(max-width: 400px) {
+        width: 400px;
+    }
+    @media(max-width: 350px) {
+        width: 350px;
+    }
+    @media(max-width: 300px) {
+        width: 300px;
     }
 
     &__form{
@@ -39,8 +52,6 @@
         margin-bottom: 4rem;
         width: 60rem;
         position: relative;
-        justify-self: center;
-        align-self: center;
 
         @media(max-width: 500px) {
             width: 50rem;
