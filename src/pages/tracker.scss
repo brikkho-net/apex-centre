@@ -15,12 +15,8 @@
     }
 
     &__form{
-        @supports((transform: translateY(-50%)) and (top: 42%) and (position: absolute)) {
-            position: absolute;
-            transform: translateY(-50%);
-            top: 42%;
-        }
-
+            position: relative;
+            top: -7%;
     }
 
     &__title{
