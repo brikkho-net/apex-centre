@@ -5,7 +5,6 @@ import NewsPreviewsContainer from './../components/News/NewsPreviewsContainer/Ne
 import { graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import Aux from './../hoc/Aux'
-import icon from './../../static/img/favicon.ico'
 
 class Home extends Component {
 
@@ -15,14 +14,18 @@ class Home extends Component {
                 <Helmet>
                     <html lang="en" />
                     <title>Apex Centre - Your #1 Source of Apex Legends Info</title>
-                    <meta name="description" content="The best website dedicated to Apex Legends! Find the most recent and important information about the game | News | Guides | Tracker | Stats"/>
+                    <meta name="description" content="Apex Centre - The best website dedicated to Apex Legends! Find the most recent and important information about the game | News | Tracker | Stats"/>
                     <meta name="og:title" content="Apex Centre"/>
                     <meta name="keywords" content="apex, news, centre, legends, tracker, stats"/>
                     <meta property="og:image" content="https://pbs.twimg.com/media/DzP4GgXUUAAWi8Q.jpg:large"/>
                     <meta property="og:description" content="The best website dedicated to Apex Legends! Find the most recent and important information about the game" />
-                    <link rel="shortcut icon" type="image/x-icon" href={icon}/>
                     <link rel="canonical" href="https://www.apex-centre.com/"/>
                     <meta name="google-site-verification" content="C6i_-UHfQ2uacymyuY1rqxy6Pwo6NGlaX7XzE5Cu5xg" />
+                    <meta name="twitter:card" content="summary" />
+                    <meta name="twitter:site" content="@centre_apex" />
+                    <meta name="twitter:title" content='Apex Centre' />
+                    <meta name="twitter:description" content="The best website dedicated to Apex Legends! Find the most recent and important information about the game" />
+                    <meta name="twitter:image" content='https://pbs.twimg.com/media/DzP4GgXUUAAWi8Q.jpg:large'/>
 
                 </Helmet>
                 <Layout>
