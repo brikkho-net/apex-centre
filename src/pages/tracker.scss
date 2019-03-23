@@ -1,8 +1,5 @@
 .search {
     color: #fff;
-    background: linear-gradient(to right bottom, #212a30b6, #212a30b6) ,url('../../static/img/background.jpg');
-    background-position: center;
-    background-size: cover;
     position: relative;
     height: 70vh;
     display: flex;
@@ -10,22 +7,8 @@
     align-items: center;
     font-family: 'Dosis';
 
-    // Some old browsers require it...
     @media(max-width: 500px) {
         height: 72vh;
-        width: 500px;
-    }
-    @media(max-width: 450px) {
-        width: 450px;
-    }
-    @media(max-width: 400px) {
-        width: 400px;
-    }
-    @media(max-width: 350px) {
-        width: 350px;
-    }
-    @media(max-width: 300px) {
-        width: 300px;
     }
 
     &__form{
