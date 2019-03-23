@@ -1,5 +1,6 @@
 .search {
     color: #fff;
+    background: linear-gradient(to right bottom, #212a30b6, #212a30b6) ,url('../../static/img/background.jpg');
     position: relative;
     height: 70vh;
     display: flex;
@@ -12,9 +13,9 @@
     }
 
     &__form{
-        position: absolute;
-        transform: translateY(-50%);
-        top: 42%;
+        // position: absolute;
+        // transform: translateY(-50%);
+        // top: 42%;
     }
 
     &__title{
