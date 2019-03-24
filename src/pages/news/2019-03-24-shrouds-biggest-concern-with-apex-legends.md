@@ -10,7 +10,7 @@ path: /news/shroud-biggest-concern-apex-cheaters
 image: /img/shroud-biggest-concern-cheaters.jpg
 tags: 'shroud, apex, legends'
 ---
-Shroud, one of the biggest streamer of <a href='https://www.twitch.tv/'>Twitch TV</a> has spoken about an important issue every Apex player thinks about since a long time. Yes, the issue here are cheaters. Shroud thinks that **even though Respawn has banned over 500 thousand accounts, they still don't handle it very well.**
+Shroud, one of the biggest streamer of <a target="_blank" href='https://www.twitch.tv/'>Twitch TV</a> has spoken about an important issue every Apex player thinks about since a long time. Yes, the issue here are cheaters. Shroud thinks that **even though Respawn has banned over 500 thousand accounts, they still don't handle it very well.**
 
 <iframe allowfullscreen="true" src="https://clips.twitch.tv/embed?autoplay=false&clip=MoistBlushingRavenFreakinStinkin&tt_content=embed&tt_medium=clips_embed"></iframe>
 

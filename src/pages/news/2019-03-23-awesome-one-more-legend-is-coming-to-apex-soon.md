@@ -18,7 +18,7 @@ One of the two legends mentioned in the image is already out: Octane. We can ass
 
 
 
-Unfortunately, that's all we know for now, but we will keep on providing you with new information about new legends and items as soon as we get to hear about them. To be the first one to hear about it, like us on <a href='https://www.facebook.com/apexcentreinfo'>our Facebook!</a> 
+Unfortunately, that's all we know for now, but we will keep on providing you with new information about new legends and items as soon as we get to hear about them. To be the first one to hear about it, like us on <a target="_blank" href='https://www.facebook.com/apexcentreinfo'>our Facebook!</a> 
 
 
 
