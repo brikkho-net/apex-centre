@@ -25,6 +25,8 @@ class Tracker extends Component{
                     <meta name='keywords' content='apex, legends, tracker, stats, player' />
                     <meta name="og:title" content='Apex Centre - Check Your Stats!'/>
                     <meta property="og:image" content="https://pbs.twimg.com/media/DzP4GgXUUAAWi8Q.jpg:large"/>
+                    <link rel="canonical" href="https://www.apex-centre.com/tracker/"/>
+
                 </Helmet>
                 <Layout>
                     <SearchProfile navigate={this.props.navigate} err={this.state.error}/>

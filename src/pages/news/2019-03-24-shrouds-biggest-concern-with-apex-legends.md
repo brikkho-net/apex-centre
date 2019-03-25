@@ -6,7 +6,7 @@ timePosted: 2019-03-24T11:13:03.567Z
 description: >-
   On recent stream, Shroud has expressed his issue about Apex Legends that he
   thinks is going to doom it.
-path: /news/shroud-biggest-concern-apex-cheaters
+path: /news/shroud-biggest-concern-apex-cheaters/
 image: /img/shroud-biggest-concern-cheaters.jpg
 tags: 'shroud, apex, legends'
 ---
