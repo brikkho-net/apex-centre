@@ -3,7 +3,7 @@ templateKey: blog-post
 title: 'Our new Apex Legends stat tracker now available!'
 date: Mar 15th 2019
 timePosted: 2019-03-15T20:43:02.598Z
-description: Ever wanted to check your Apex Legends in-game stats? With our tracker it is possible!
+description: Ever wanted to check your Apex Legends in-game stats? With our brand new tracker it is possible! Check as you progress with our site.
 path: news/check-your-stats/
 image: /img/screenshot_2019-03-15-apex-legends-tracker-check-your-stats-min.png
 tags: 'stats, tracker, profile, apex, legends'
