@@ -403,3 +403,13 @@
 .ps-icon {
     right: 10%;
 }
+
+.error-message {
+    font-size: 3rem;
+    font-weight: bold;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
