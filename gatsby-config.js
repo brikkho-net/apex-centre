@@ -25,7 +25,7 @@ module.exports = {
       options: {
         host: 'https://www.apex-centre.com/',
         sitemap: 'https://www.apex-centre.com/sitemap.xml',
-        policy: [{ userAgent: '*', allow: '/', disallow: '/profile/' }]
+        policy: [{ userAgent: '*', allow: '/' }]
       }
     },
 
