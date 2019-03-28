@@ -29,8 +29,7 @@ class Tracker extends Component{
 
                 </Helmet>
                 <Layout>
-                    {/* <SearchProfile navigate={this.props.navigate} err={this.state.error}/> */}
-                    <p className='error-message'>Looks like something is wrong with our API. We will try to fix it as soon as possible. Sorry!</p>
+                    <SearchProfile navigate={this.props.navigate} err={this.state.error}/>
                 </Layout>
             </Aux>
         )

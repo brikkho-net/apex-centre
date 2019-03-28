@@ -20,6 +20,7 @@ import lifeline from './../../static/img/tracker/Lifeline.png';
 import mirage from './../../static/img/tracker/Mirage.png';
 import pathfinder from './../../static/img/tracker/Pathfinder.png';
 import wraith from './../../static/img/tracker/Wraith.png';
+import octane from './../../static/img/tracker/Octane.png';
 
 class Profile extends Component {
 
@@ -29,7 +30,7 @@ class Profile extends Component {
         stats: null,
         username: '',
         overallStats: {},
-        platform: 'pc',
+        platform: 'PC',
         err: null,
     }
 
@@ -39,7 +40,7 @@ class Profile extends Component {
         const platform = search.match(/platform=([^&]*)/);
         this.setState({
             username: username[1],
-            platform: platform[1]
+            platform: platform[1].toUpperCase()
         }, () => {
             this.onSearchUser();
         })
@@ -48,46 +49,50 @@ class Profile extends Component {
 
     onSearchUser = () => {
         this.setState({loading: true})
-        //https://my-apex-api.herokuapp.com/
-        axios.post(`https://my-apex-api.openode.io/`, {
-            platform: this.state.platform,
-            username: this.state.username,
-            authorization: 'ePSizO14kE5h9e7xWwHeZdIqIvzW4MG4oCMeM3Uy1Lc'
-        }).then(res => {
-            let overallStats = this.state.overallStats;
-            let allKills = 0;
-            let killArray = [];
-            res.data.legends.forEach(legend => {
-                legend.stats.forEach(stat => {
-                    if(stat.kills) {
-                        allKills += parseInt(stat.kills)
-                        killArray.push(parseInt(stat.kills))
-                    }
-                })
-            })
-            overallStats.allKills = allKills;
-
-            // Finding Legend with most kills
-            let mostKills = Math.max.apply(null, killArray)
-            res.data.legends.forEach(legend => {
-                legend.stats.forEach(stat => {
-                    if(stat.kills) {
-                        if(stat.kills === mostKills) {
-                            overallStats.favoriteLegend = this.onCheckImage(legend.name)
-                        }
-                    }
-                })
-            })
-
-            this.setState({showStats: true, loading: false, stats: res.data, overallStats: overallStats, err: null})
+        axios.post('https://my-apex-api.openode.io', {
+                authorization: 'QQezd3iX7D1z7m6MexoR',
+                username: this.state.username,
+                platform: this.state.platform
         })
+        .then(res => {
+            const stats = res.data.legends.all
+            const keys = Object.keys(stats);
+            let allKills = 0;
+            const killsArray = [];
+            let overallStats = {};
+            for(let key of keys) {
+                if(stats[key].kills) {
+                    allKills += parseInt(stats[key].kills)
+                    killsArray.push(stats[key].kills)
+                }
+            }
+            overallStats.allKills = allKills
+    
+            // Finding Legend with most kills
+            let mostKills = Math.max.apply(null, killsArray)
+            for(let key of keys) {
+                if(stats[key].kills) {
+                    if(parseInt(stats[key].kills) === mostKills) {
+                        overallStats.favoriteLegend = this.onCheckImage(key.toLowerCase())
+                    }
+                }
+            }
+            console.log(overallStats.favoriteLegend)
+            this.setState({
+                overallStats: overallStats,
+                stats: res.data,
+                loading: false,
+                showStats: true
+            })
+        })
+
         .catch(e => {
+            console.log(e)
             if(e.response) {
                 this.setState({err: e.response.data.error.message})
             } else {
                 this.setState({err: 'Network Error. Try again later'})
             }
-
         })
     }
 
@@ -111,12 +116,22 @@ class Profile extends Component {
                 return pathfinder
             case 'wraith':
                 return wraith
+            case 'octane':
+                return octane
             default:
                 return bloodhound
         }
     }
 
-    render() { 
+    render() {
+        let stat = [];
+        if(this.state.stats) {
+            const keys = Object.keys(this.state.stats.legends.all);
+            for(let key of keys) {
+                stat.push(<Legend name={key} stats={this.state.stats.legends.all[key]} image={this.onCheckImage(key.toLowerCase())}/>)
+            }
+        }
+
         if(!this.state.showStats) {
             if(this.state.err) {
                 this.props.navigate(`/tracker?err=${this.state.err.split(' ').join('_')}`)
@@ -143,7 +158,7 @@ class Profile extends Component {
 
                 <BasicInfo 
                     avatar={img}
-                    username={this.state.username[0].toUpperCase() + this.state.username.slice(1)}
+                    username={this.state.stats.global.name}
                     platform={this.state.platform}
                 />
 
@@ -158,7 +173,7 @@ class Profile extends Component {
                             
                             <div className='account-overview-stats'>
 
-                                <Stat name="Level" amount={this.state.stats.level} account />
+                                <Stat name="Level" amount={this.state.stats.global.level} account />
                                 <Stat name="Kills" amount={this.state.overallStats.allKills} account />
 
                             </div>
@@ -170,14 +185,7 @@ class Profile extends Component {
                     </div>
                     
                     <div className='champions-container'>
-                        {this.state.stats.legends.map(legend => (
-                            <Legend
-                                key={legend.name}
-                                name={legend.name[0].toUpperCase() + legend.name.slice(1)}
-                                image={this.onCheckImage(legend.name.toLowerCase())}
-                                stats={legend.stats}
-                            />
-                        ))}
+                        {stat}
                     </div>
 
                     

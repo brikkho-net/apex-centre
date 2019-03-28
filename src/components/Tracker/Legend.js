@@ -7,8 +7,21 @@ const Legend = ({
     name,
     image,
     stats
-}) => (
-    <div className="single-champion-container">
+}) => {
+    const keys = Object.keys(stats)
+    const singleStats = []
+    for(let key of keys) {
+        if(stats[key] === '0') {
+            continue;
+        }
+        singleStats.push(<Stat 
+            key={key}
+            amount={stats[key]}
+            name={key.split('_').join(' ')}
+        />)
+    }
+    return (
+        <div className="single-champion-container">
 
         <div className="single-champion-name">
             <h3 className="account-stats-heading">
@@ -27,18 +40,17 @@ const Legend = ({
             </div>
 
             <div className="all-champion-stats">
-                {stats.map(stat => (
-                    <Stat
-                        key={Object.keys(stat)[0]}
-                        amount={stat[Object.keys(stat)[0]]}
-                        name={Object.keys(stat)[0].split("_").join(" ").toUpperCase()}
-                    />
-                ))}
+                {singleStats}
+                <div>
+                    
+                </div>
             </div>
 
         </div>
 
     </div>
-);
+    )
+
+};
 
 export default Legend;
