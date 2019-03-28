@@ -10,13 +10,13 @@ const BasicInfo = ({
     let icon;
     console.log(platform)
     switch(platform) {
-        case 'pc':
+        case 'PC':
             icon = <i className="fab fa-windows account-icon"></i>
             break;
-        case 'xb1':
+        case 'X1':
             icon = <i className="fab fa-xbox xbox-icon account-icon"></i>
             break;
-        case 'ps4':
+        case 'PS4':
             icon = <i className="fab fa-playstation ps-icon account-icon"></i>
             break;
         default:

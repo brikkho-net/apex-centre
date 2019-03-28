@@ -7,7 +7,7 @@ class SearchProfile extends Component{
 
     state = {
         username: '',
-        platform: 'pc'
+        platform: 'PC'
     }
 
     inputChange = e => {
@@ -36,16 +36,16 @@ class SearchProfile extends Component{
                     <div className='search__group'>
 
                         <input placeholder='Your Username...' type="text" name="username" value={this.state.username} onChange={this.inputChange} />
-                        <i style={{color: this.state.platform === 'pc' ? '#326f99' : '#fff'}}
-                            onClick={(e) => this.onPlatformChange(e, 'pc')}
+                        <i style={{color: this.state.platform === 'PC' ? '#326f99' : '#fff'}}
+                            onClick={(e) => this.onPlatformChange(e, 'PC')}
                             className="fab fa-windows windows-icon search__icon">
                         </i>
-                        <i style={{color: this.state.platform === 'xb1' ? '#326f99' : '#fff'}} 
-                            onClick={(e) => this.onPlatformChange(e, 'xb1')}
+                        <i style={{color: this.state.platform === 'X1' ? '#326f99' : '#fff'}} 
+                            onClick={(e) => this.onPlatformChange(e, 'X1')}
                             className="fab fa-xbox xbox-icon search__icon">
                         </i>
-                        <i style={{color: this.state.platform === 'ps4' ? '#326f99' : '#fff'}}
-                            onClick={(e) => this.onPlatformChange(e, 'ps4')}
+                        <i style={{color: this.state.platform === 'PS4' ? '#326f99' : '#fff'}}
+                            onClick={(e) => this.onPlatformChange(e, 'PS4')}
                             className="fab fa-playstation ps-icon search__icon">
                         </i>
 

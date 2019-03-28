@@ -38,6 +38,7 @@ class Profile extends Component {
         const { search } = this.props.location;
         const username = search.match(/username=([^&]*)/);
         const platform = search.match(/platform=([^&]*)/);
+        console.log(platform)
         this.setState({
             username: username[1],
             platform: platform[1].toUpperCase()
