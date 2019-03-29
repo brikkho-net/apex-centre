@@ -10,6 +10,7 @@ import BasicInfo from '../components/Tracker/BasicInfo';
 import Stat from '../components/Tracker/Stat';
 import FavoriteLegend from '../components/Tracker/FavoriteLegend';
 import Legend from '../components/Tracker/Legend';
+import Button from '../components/UI/Button/Button'
 
 //images
 import img from './img.png';
@@ -32,13 +33,13 @@ class Profile extends Component {
         overallStats: {},
         platform: 'PC',
         err: null,
+        updateBlock: false,
     }
 
     componentDidMount(){
         const { search } = this.props.location;
         const username = search.match(/username=([^&]*)/);
         const platform = search.match(/platform=([^&]*)/);
-        console.log(platform)
         this.setState({
             username: username[1],
             platform: platform[1].toUpperCase()
@@ -49,17 +50,6 @@ class Profile extends Component {
     }
 
     onApplyStats = (res) => {
-        
-    }
-
-    onSearchUser = () => {
-        this.setState({loading: true})
-        axios.post('http://my-apex-api.openode.io/stats/get', {
-                authorization: 'QQezd3iX7D1z7m6MexoR',
-                username: this.state.username,
-                platform: this.state.platform
-        })
-        .then(res => {
             const stats = res.data.legends.all
             const keys = Object.keys(stats);
             let allKills = 0;
@@ -88,6 +78,17 @@ class Profile extends Component {
                 loading: false,
                 showStats: true
             })
+    }
+
+    onSearchUser = () => {
+        this.setState({loading: true})
+        axios.post('http://my-apex-api.openode.io/stats/get', {
+                authorization: 'QQezd3iX7D1z7m6MexoR',
+                username: this.state.username,
+                platform: this.state.platform
+        })
+        .then(res => {
+            this.onApplyStats(res)
         })
 
         .catch(e => {
@@ -99,7 +100,32 @@ class Profile extends Component {
         })
     }
 
-    onUpdateUser
+    onUpdateUser = () => {
+        if(!this.state.updateBlock) {
+            this.setState({loading: true, showStats: false}, () => {
+                axios.post('http://my-apex-api.openode.io/stats/update', {
+                    authorization: 'QQezd3iX7D1z7m6MexoR',
+                    username: this.state.username,
+                    platform: this.state.platform
+                })
+                .then(res => {
+                    this.onApplyStats(res)
+                    this.setState({updateBlock: true})
+                    let updateBlock = setTimeout(() => {
+                        this.setState({updateBlock: false})
+                    }, 180000)
+                })
+                .catch(e => {
+                    if(e.response) {
+                        this.setState({err: e.response.data.error.message})
+                    } else {
+                        this.setState({err: 'Network Error. Try again later'})
+                    }
+                })
+            })
+        }
+    }
+
 
     onChangeUsername = (e) => {
         this.setState({username: e.target.value})
@@ -166,6 +192,10 @@ class Profile extends Component {
                     username={this.state.stats.global.name}
                     platform={this.state.platform}
                 />
+
+                <Button onClick={this.onUpdateUser} classes={`${this.state.updateBlock ? 'blocked-update-button' : null} update-button`}>
+                    {this.state.updateBlock ? 'UP TO DATE' : 'UPDATE STATS'}
+                </Button>
 
                 <div className='account-all-stats'>
 

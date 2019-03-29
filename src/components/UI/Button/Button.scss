@@ -18,3 +18,22 @@
         box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
     }
 }
+
+.update-button {
+    padding: 1rem 3rem;
+
+    @media(max-width: 400px) {
+        padding: .7rem 2rem;
+    }
+}
+
+.blocked-update-button {
+    background: #a4a8ad;
+    border: none;
+    box-shadow: none;
+
+    &:hover {
+        transform: none;
+        box-shadow: none;
+    }
+}

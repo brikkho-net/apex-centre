@@ -2,7 +2,7 @@ import React from 'react';
 import './Button.scss'
 
 const Button = (props) => (
-        <button className='main-button'>
+        <button onClick={props.onClick ? props.onClick : null} className={`main-button ${props.classes}`}>
             {props.children}
         </button>
 
