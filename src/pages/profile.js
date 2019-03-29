@@ -50,7 +50,7 @@ class Profile extends Component {
 
     onSearchUser = () => {
         this.setState({loading: true})
-        axios.post('https://my-apex-api.openode.io/get-stats', {
+        axios.post('https://my-apex-api.openode.io/stats/get', {
                 authorization: 'QQezd3iX7D1z7m6MexoR',
                 username: this.state.username,
                 platform: this.state.platform
