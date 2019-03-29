@@ -48,9 +48,13 @@ class Profile extends Component {
 
     }
 
+    onApplyStats = (res) => {
+        
+    }
+
     onSearchUser = () => {
         this.setState({loading: true})
-        axios.post('https://my-apex-api.openode.io/stats/get', {
+        axios.post('http://my-apex-api.openode.io/stats/get', {
                 authorization: 'QQezd3iX7D1z7m6MexoR',
                 username: this.state.username,
                 platform: this.state.platform
@@ -78,7 +82,6 @@ class Profile extends Component {
                     }
                 }
             }
-            console.log(overallStats.favoriteLegend)
             this.setState({
                 overallStats: overallStats,
                 stats: res.data,
@@ -88,7 +91,6 @@ class Profile extends Component {
         })
 
         .catch(e => {
-            console.log(e)
             if(e.response) {
                 this.setState({err: e.response.data.error.message})
             } else {
@@ -96,6 +98,8 @@ class Profile extends Component {
             }
         })
     }
+
+    onUpdateUser
 
     onChangeUsername = (e) => {
         this.setState({username: e.target.value})
