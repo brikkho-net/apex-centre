@@ -21,7 +21,7 @@ class Tracker extends Component{
             <Aux>
                 <Helmet>
                     <title>Apex Legends Tracker - Check Your Stats!</title>
-                    <meta name="description" content='Check your Apex Legends stats now! Watch as you progress with the best tracker'/>
+                    <meta name="description" content='Check your Apex Legends stats now! Watch as you progress with the best Apex Legends Tracker'/>
                     <meta name='keywords' content='apex, legends, tracker, stats, player' />
                     <meta name="og:title" content='Apex Centre - Check Your Stats!'/>
                     <meta property="og:image" content="https://pbs.twimg.com/media/DzP4GgXUUAAWi8Q.jpg:large"/>
