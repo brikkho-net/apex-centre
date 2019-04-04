@@ -93,7 +93,7 @@ class Profile extends Component {
 
         .catch(e => {
             if(e.response) {
-                this.setState({err: e.response.data.error.message})
+                this.setState({err: e.response.statusText})
             } else {
                 this.setState({err: 'Network Error. Try again later'})
             }
