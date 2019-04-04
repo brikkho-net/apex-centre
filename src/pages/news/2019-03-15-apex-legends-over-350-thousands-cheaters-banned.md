@@ -10,15 +10,13 @@ path: news/over-300k-cheaters-banned/
 image: /img/pasted_image_0_4-min.png
 tags: 'cheats, apex, legends, respawn, hacks, ban'
 ---
-Cheaters are a massive problem in the BR genre. Saddly, it the case for Apex Legends, too. Respawn knows it very well and decided to go on a war against them.
-
-
+Cheaters are a massive problem in the BR genre. Saddly, it is the case for Apex Legends, too. Respawn knows it very well and decided to go on a war against them.
 
 ## 355,000 cheaters got banned
 
-"We take cheating very seriously and care deeply about the health of 'Apex Legends' for all players.” - Respawn community manager Jay Frechette says in his Reddit post. He probably knows it's not gonna be easy, though. Just a simple google search can lead to a lot of results that claim to help you with aiming, wall-hacking and a lot more. Of course, we do not encourage you to try and look for them, fair play is always better!
+"We take cheating very seriously and care deeply about the health of Apex Legends for all players.” - Apex's community manager Jay Frechette says in his Reddit post. He probably knows it's not gonna be easy, though. Just a simple google search can lead to a lot of results that claim to help you with aiming, wall-hacking and a lot more. Its something everyone that played FPS shooter knows - if the game is free, there are gonna be a lot of cheats and exploits. Of course, we do not encourage you to try and look for them, fair play is always better!
 
-## What's Respawn plan for the future?
+## What's Respawn plan for the Apex Legends future?
 
 They couldn't say much to not to help cheaters prepare for the upcoming patches, but we got some insights directly from Jay:
 
@@ -26,6 +24,4 @@ They couldn't say much to not to help cheaters prepare for the upcoming patches,
 * Scaling up our anti-cheat team so we have more dedicated resources.
 * We are adding a report feature on PC to report cheaters in game that goes directly to Easy-Anti-Cheat.
 
-
-
-## We will have to wait for the result, but it's important that Respawn tackles the issue. Let's hope for the best!
+## We will have to wait for the result, but it's important that Respawn tackles the issue and tries to make Apex Legends a better place.
