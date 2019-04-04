@@ -36,7 +36,7 @@ const BasicInfo = ({
                 {icon}
 
             </div>
-            <p className='account-beta-reminder'><Link to='/news/apex-legends-stats-tracker'>Our tracker is still in beta! Click here for more info</Link></p>
+            <p className='account-beta-reminder'><Link to='/news/check-your-stats/'>Our tracker is still in beta! Click here for more info</Link></p>
         </div>
     )
 
