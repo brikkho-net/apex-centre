@@ -7,7 +7,7 @@
 * [Screenshots](#screenshots)
 * [Technologies](#technologies)
 * [Setup](#setup)
-
+* [Live](#live)
 
 ## General info
 My website is all about Apex Legends. It has quite a few real-time users. People can look up news and check their in-game stats.
@@ -35,3 +35,5 @@ My website is all about Apex Legends. It has quite a few real-time users. People
 
 	    npm run build
 
+## Live
+Website is live on https://apex-centre.com
